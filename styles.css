@@ -492,25 +492,6 @@ img {
   gap: 8px;
 }
 
-.window-expand-btn {
-  font-size: 0.75rem;
-  font-family: var(--font-mono);
-  color: var(--accent-cyan);
-  background-color: rgba(6, 182, 212, 0.1);
-  padding: 3px 8px;
-  border-radius: var(--radius-sm);
-  border: 1px solid rgba(6, 182, 212, 0.25);
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  transition: all var(--transition-fast);
-}
-
-.window-expand-btn:hover {
-  background-color: rgba(6, 182, 212, 0.2);
-  color: #fff;
-}
-
 .showcase-display {
   position: relative;
   min-height: 480px;
@@ -537,7 +518,6 @@ img {
 
 .screenshot-img-wrap {
   position: relative;
-  cursor: zoom-in;
   overflow: hidden;
 }
 
@@ -607,7 +587,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 2rem;
 }
@@ -615,7 +595,8 @@ img {
 .matrix-brands-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  justify-content: center;
+  gap: 8px;
 }
 
 .matrix-brand-btn {
@@ -638,35 +619,6 @@ img {
   background-color: var(--bg-elevated);
   border-color: var(--accent-red);
   color: var(--text-white);
-}
-
-.matrix-search-box {
-  position: relative;
-  width: 260px;
-}
-
-.matrix-search-input {
-  width: 100%;
-  background-color: var(--bg-input);
-  border: 1px solid var(--border-muted);
-  padding: 7px 12px 7px 32px;
-  border-radius: var(--radius-sm);
-  color: var(--text-primary);
-  font-size: 0.8125rem;
-  outline: none;
-}
-
-.matrix-search-input:focus {
-  border-color: #0078d4;
-}
-
-.matrix-search-icon {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--text-muted);
-  pointer-events: none;
 }
 
 .matrix-grid {
@@ -921,49 +873,46 @@ img {
 }
 
 /* ==========================================================================
-   Image Lightbox Modal
+   Contact Section
    ========================================================================== */
 
-.lightbox-modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background-color: rgba(5, 7, 10, 0.94);
-  backdrop-filter: blur(12px);
-  padding: 1.5rem;
-  align-items: center;
-  justify-content: center;
+.contact-section {
+  padding: 3.5rem 0 4.5rem;
 }
 
-.lightbox-modal.active {
-  display: flex;
-}
-
-.lightbox-content {
-  position: relative;
-  max-width: 95vw;
-  max-height: 90vh;
-}
-
-.lightbox-content img {
-  max-width: 100%;
-  max-height: 85vh;
-  object-fit: contain;
-  border-radius: var(--radius-md);
+.contact-card {
+  background: linear-gradient(135deg, #161e2c 0%, #111722 100%);
   border: 1px solid var(--border-muted);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  box-shadow: var(--shadow-md);
 }
 
-.lightbox-close {
-  position: absolute;
-  top: -38px;
-  right: 0;
+.contact-card-info {
+  max-width: 580px;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+  font-weight: 700;
   color: var(--text-white);
-  font-size: 1.75rem;
-  cursor: pointer;
-  background: none;
-  border: none;
+  margin-bottom: 0.5rem;
+}
+
+.contact-desc {
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.contact-main-btn {
+  font-size: 1rem;
+  padding: 0.85rem 1.75rem;
 }
 
 /* ==========================================================================
