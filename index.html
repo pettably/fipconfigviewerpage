@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIP Config Viewer — Fire Panel Configs Anywhere | Windows, iOS, Android</title>
+
+  <meta name="description"
+    content="View, search, audit loops, and create test reports for Ampac, Vigilant, Simplex, Notifier, and Pertronic fire panels on Windows, iOS, and Android. No vendor license or dongle required.">
+  <meta name="keywords"
+    content="fire indicator panel, FIP config viewer, fire panel viewer, Ampac FireFinder Plus, Vigilant MX1, Simplex 4100ES, Notifier 3030, Pertronic F220, fire alarm technician, test sheet export">
+  <meta name="author" content="Laneyy">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://fipconfigviewer.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fipconfigviewer.com/">
+  <meta property="og:title" content="FIP Config Viewer — Fire Panel Configs Anywhere">
+  <meta property="og:description"
+    content="Open and search Ampac, Vigilant, Simplex, Notifier, and Pertronic fire panel backups on Windows, iOS, and Android. No vendor dongle or license required.">
+  <meta property="og:image" content="https://fipconfigviewer.com/assets/screenshot2.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FIP Config Viewer — Fire Panel Configs Anywhere">
+  <meta name="twitter:description"
+    content="The dedicated utility for fire alarm technicians, commissioning engineers, and routine testers across Windows, iOS, and Android.">
+  <meta name="twitter:image" content="https://fipconfigviewer.com/assets/screenshot2.png">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "FIP Config Viewer",
+    "operatingSystem": "Windows 10, Windows 11, iOS, Android",
+    "applicationCategory": "UtilitiesApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "9.95",
+      "priceCurrency": "AUD"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Laneyy"
+    },
+    "description": "View, create test reports, share configs, and export device and zone lists for Ampac, Vigilant, Simplex, Notifier, and Pertronic fire alarm panels.",
+    "screenshot": "https://fipconfigviewer.com/assets/screenshot1.png"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ========================================================================
+       Top Navigation
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand">
+        <img src="assets/icon.png" alt="FIP Config Viewer Icon" class="brand-icon">
+        <div class="brand-text">
+          <span class="brand-title">FIP Config Viewer</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#showcase" class="nav-link">Screenshots</a></li>
+          <li><a href="#matrix" class="nav-link">Supported Panels</a></li>
+          <li><a href="#specs" class="nav-link">Specifications</a></li>
+          <li><a href="#downloads" class="nav-link">Downloads</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#downloads" class="btn btn-primary">
+          Get the App
+        </a>
+        <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       Hero Section
+       ======================================================================== -->
+  <section class="hero-section">
+    <div class="container hero-content">
+      <h1 class="hero-title">
+        Fire panel configs,<br><span class="text-fire">anywhere</span>.
+      </h1>
+
+      <p class="hero-subtitle">
+        Stop carrying proprietary vendor dongles or booting slow programmer software just to read a backup. Open,
+        search, and verify Ampac, Vigilant, Simplex, Pertronic, and Notifier configurations on your tablet, phone, or PC.
+      </p>
+
+      <!-- Multi-Platform Download Group -->
+      <div class="hero-cta-group">
+        <!-- Windows -->
+        <a href="https://apps.microsoft.com/detail/9mz8tl0hw1b6?hl=en-GB&gl=AU" target="_blank"
+          rel="noopener noreferrer" class="hero-platform-btn ms-store-link">
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="#0078d4">
+            <path
+              d="M0 3.449L9.75 2.1v9.451H0V3.449zm0 8.899h9.75V21.9L0 20.551v-8.203zm10.749-10.42L24 0v11.55h-13.251V1.928zm0 10.42H24V24l-13.251-1.929V12.348z" />
+          </svg>
+          <div class="platform-btn-info">
+            <span class="platform-btn-sub">Download for</span>
+            <span class="platform-btn-title">Windows</span>
+          </div>
+        </a>
+
+        <!-- iOS -->
+        <a href="https://apps.apple.com/app/fip-config-viewer/id6784992438" target="_blank"
+          rel="noopener noreferrer" class="hero-platform-btn">
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.15c.67-.83 1.13-1.98.99-3.15-1.01.05-2.22.68-2.92 1.5-.62.72-1.16 1.89-1.01 3.02 1.13.09 2.28-.56 2.94-1.37z" />
+          </svg>
+          <div class="platform-btn-info">
+            <span class="platform-btn-sub">Download on</span>
+            <span class="platform-btn-title">App Store</span>
+          </div>
+        </a>
+
+        <!-- Android -->
+        <a href="https://play.google.com/store/apps/details?id=com.fipviewer" target="_blank"
+          rel="noopener noreferrer" class="hero-platform-btn">
+          <svg class="platform-icon" viewBox="0 0 24 24" fill="#3ddc84">
+            <path
+              d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0001s.4482-1.0001.9993-1.0001c.5516 0 .9997.4486.9997 1.0001s-.4481 1.0001-.9997 1.0001m-11.046 0c-.5511 0-.9993-.4486-.9993-1.0001s.4482-1.0001.9993-1.0001c.5516 0 .9997.4486.9997 1.0001s-.4481 1.0001-.9997 1.0001m11.4045-6.02l1.996-3.456a.416.416 0 0 0-.1521-.5676.416.416 0 0 0-.5676.1521l-2.0223 3.503C15.5902 8.4111 13.8533 8.0805 12 8.0805c-1.8533 0-3.5902.3306-5.1355.8724L4.8422 5.4499a.416.416 0 0 0-.5676-.1521.416.416 0 0 0-.1521.5676l1.996 3.456C2.6889 11.1867.3432 14.6589 0 18.7402h24c-.3432-4.0813-2.6889-7.5535-6.1185-9.4188" />
+          </svg>
+          <div class="platform-btn-info">
+            <span class="platform-btn-sub">Get it on</span>
+            <span class="platform-btn-title">Google Play</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="pricing-pill">
+        $9.95 AUD • One-time purchase • No subscription
+      </div>
+
+      <!-- Quick Proof / Stats Bar -->
+      <div class="hero-stats-row">
+        <div class="hero-stat">
+          <span class="stat-value">9+ Brands</span>
+          <span class="stat-label">Ampac, Simplex, Vigilant & more</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-value">8.6 GB → 2.5 MB</span>
+          <span class="stat-label">Simplex Site Compression</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-value">No Licenses</span>
+          <span class="stat-label">View all data</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-value">100% Offline</span>
+          <span class="stat-label">No Cloud, No Accounts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       App Showcase / Real Screenshots
+       ======================================================================== -->
+  <section class="showcase-section" id="showcase">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Built for fast, clear work in plant rooms</h2>
+        <p class="section-desc">
+          High-contrast dark UI designed for tablets, laptops, and phones. Every loop, point, node, and test sheet at
+          your fingertips without waiting on bloated vendor suites.
+        </p>
+      </div>
+
+      <!-- Tab Switcher -->
+      <div class="showcase-tabs">
+        <button class="showcase-tab active" data-target="tab-configs">
+          <span>01</span> Config Library & Search
+        </button>
+        <button class="showcase-tab" data-target="tab-summary">
+          <span>02</span> Site & Loop Summary
+        </button>
+        <button class="showcase-tab" data-target="tab-nodes">
+          <span>03</span> Simplex Multi-Node Network
+        </button>
+      </div>
+
+      <!-- Window Frame Viewport -->
+      <div class="showcase-viewport">
+        <div class="window-titlebar">
+          <div class="window-dots">
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+            <span class="window-dot"></span>
+          </div>
+          <span class="window-title" id="windowTitleText">
+            FIP Config Viewer — Config Library & Instant Search
+          </span>
+          <button class="window-expand-btn" id="windowExpandBtn">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" />
+            </svg>
+            Click to Enlarge
+          </button>
+        </div>
+
+        <div class="showcase-display">
+          <!-- Slide 1: Configs Library -->
+          <div class="screenshot-slide active" id="tab-configs">
+            <div class="screenshot-img-wrap">
+              <img src="assets/screenshot1.png"
+                alt="FIP Config Viewer Configs Library screen showing FireFinder Plus, Notifier 3030, and Vigilant MX1">
+            </div>
+            <div class="screenshot-caption-bar">
+              <div class="caption-meta">
+                <span class="caption-heading">Unified Config Management & Search</span>
+                <span class="caption-details">Keep all client panel configs organized. Search by job site, panel type,
+                  or filename with one-click export and sharing.</span>
+              </div>
+              <div class="caption-tags">
+                <span class="tech-tag">Ampac FireFinder Plus</span>
+                <span class="tech-tag">Notifier 3030</span>
+                <span class="tech-tag">Vigilant MX1</span>
+                <span class="tech-tag">Pertronic F220</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Loop Summary -->
+          <div class="screenshot-slide" id="tab-summary">
+            <div class="screenshot-img-wrap">
+              <img src="assets/screenshot2.png"
+                alt="FIP Config Viewer Loop Summary showing Nodes, Zones, Devices, Groups, and Loop breakdown">
+            </div>
+            <div class="screenshot-caption-bar">
+              <div class="caption-meta">
+                <span class="caption-heading">Site Totals & Loop Device Allocation</span>
+                <span class="caption-details">Instantly see 23 Nodes, 860 Zones, 1,963 Devices, and 416 Groups.
+                  Breakdown of every loop with used devices vs spare addresses.</span>
+              </div>
+              <div class="caption-tags">
+                <span class="tech-tag">126 Device Limit Audit</span>
+                <span class="tech-tag">Spare Device Count</span>
+                <span class="tech-tag">Zone Grouping</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Simplex Nodes -->
+          <div class="screenshot-slide" id="tab-nodes">
+            <div class="screenshot-img-wrap">
+              <img src="assets/screenshot3.png"
+                alt="FIP Config Viewer Simplex Multi-Node network view showing 4100ES, AS7240 NDU nodes and revisions">
+            </div>
+            <div class="screenshot-caption-bar">
+              <div class="caption-meta">
+                <span class="caption-heading">Simplex Multi-Node Network Topology</span>
+                <span class="caption-details">Audit every node on a large Simplex network (4100ES, AS7240 NDU) with
+                  build dates, used loops, points, and programmer revisions.</span>
+              </div>
+              <div class="caption-tags">
+                <span class="tech-tag">Simplex 4100ES</span>
+                <span class="tech-tag">NDU Displays</span>
+                <span class="tech-tag">Custom Control</span>
+                <span class="tech-tag">Lists</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Supported Panels Matrix
+       ======================================================================== -->
+  <section class="matrix-section" id="matrix">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Supported Fire Alarm Panels</h2>
+        <p class="section-desc">
+          Engineered to support the industry's most common commercial, industrial, and high-rise fire systems.
+        </p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="matrix-filter-bar">
+        <div class="matrix-brands-tabs">
+          <button class="matrix-brand-btn active" data-filter="all">All Brands</button>
+          <button class="matrix-brand-btn" data-filter="ampac">Ampac</button>
+          <button class="matrix-brand-btn" data-filter="vigilant">Vigilant / JCI</button>
+          <button class="matrix-brand-btn" data-filter="simplex">Simplex</button>
+          <button class="matrix-brand-btn" data-filter="notifier">Notifier</button>
+          <button class="matrix-brand-btn" data-filter="pertronic">Pertronic</button>
+          <button class="matrix-brand-btn" data-filter="siemens">Siemens</button>
+          <button class="matrix-brand-btn" data-filter="others">Others</button>
+        </div>
+
+        <div class="matrix-search-box">
+          <svg class="matrix-search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <input type="text" id="matrixSearchInput" class="matrix-search-input" placeholder="Search panel model...">
+        </div>
+      </div>
+
+      <!-- Panels Grid -->
+      <div class="matrix-grid">
+        <!-- Ampac -->
+        <div class="panel-card" data-brand="ampac">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Ampac</span>
+            <span class="panel-status-pill">Full Support</span>
+          </div>
+          <h4 class="panel-models">FireFinder, FireFinder Plus, EvacUElite</h4>
+          <ul class="panel-features-list">
+            <li>functions and addons support</li>
+            <li>Automatic zone name merging into point lists</li>
+            <li>Loop device allocation & spare address auditing</li>
+            <li>EvacUElite EWIS amp configuration</li>
+          </ul>
+        </div>
+
+        <!-- Vigilant -->
+        <div class="panel-card" data-brand="vigilant">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Vigilant / JCI</span>
+            <span class="panel-status-pill">No License Required</span>
+          </div>
+          <h4 class="panel-models">MX1, MX4428, F4000, QE20</h4>
+          <ul class="panel-features-list">
+            <li>View logic on the go</li>
+            <li>Networked MX1 multi-panel site linking</li>
+            <li>Full loop device point text & zone allocation</li>
+            <li>QE20 EWIS emergency system lists</li>
+          </ul>
+        </div>
+
+        <!-- Simplex -->
+        <div class="panel-card" data-brand="simplex">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Simplex</span>
+            <span class="panel-status-pill">No License Required</span>
+          </div>
+          <h4 class="panel-models">4100ES, 4100U, Simplex Networks, NDU</h4>
+          <ul class="panel-features-list">
+            <li>Multi-node network search across all nodes</li>
+            <li>Custom Control equations & Lists viewer</li>
+            <li>8.6 GB network archives compress to ~2.5 MB</li>
+            <li>Programmer revision & build date inspection</li>
+          </ul>
+        </div>
+
+        <!-- Notifier -->
+        <div class="panel-card" data-brand="notifier">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Notifier / Honeywell</span>
+          </div>
+          <h4 class="panel-models">AFP-2800, NFS-3030</h4>
+          <ul class="panel-features-list">
+            <li>Direct .accdb database parsing</li>
+            <li>Intelligent loop device & module listings</li>
+            <li>Zone definitions and label lookup</li>
+            <li>Fast search across thousands of detectors</li>
+          </ul>
+        </div>
+
+        <!-- Pertronic -->
+        <div class="panel-card" data-brand="pertronic">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Pertronic</span>
+          </div>
+          <h4 class="panel-models">F100, F120, F220</h4>
+          <ul class="panel-features-list">
+            <li>.util configuration file support</li>
+            <li>Addressable loop breakdown & device names</li>
+            <li>Master & sub-panel network browsing</li>
+            <li>Quick test sheet generation</li>
+          </ul>
+        </div>
+
+        <!-- Siemens -->
+        <div class="panel-card" data-brand="siemens">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Siemens</span>
+          </div>
+          <h4 class="panel-models">Cerberus PRO</h4>
+          <ul class="panel-features-list">
+            <li>System point & zone index parsing</li>
+            <li>Loop address allocation tables</li>
+            <li>Device state and description search</li>
+            <li>Report export to spreadsheet</li>
+          </ul>
+        </div>
+
+        <!-- Fusion -->
+        <div class="panel-card" data-brand="others">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Fusion</span>
+          </div>
+          <h4 class="panel-models">Axis Series</h4>
+          <ul class="panel-features-list">
+            <li>Addressable loop point exploration</li>
+            <li>Zone text and device description indexing</li>
+            <li>One-tap test sheet population</li>
+          </ul>
+        </div>
+
+        <!-- Brooks -->
+        <div class="panel-card" data-brand="others">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Brooks</span>
+          </div>
+          <h4 class="panel-models">Brooks Fire Panels</h4>
+          <ul class="panel-features-list">
+            <li>Point and circuit device listings</li>
+            <li>Offline config reference for service techs</li>
+            <li>Loop device and spare address visibility</li>
+          </ul>
+        </div>
+
+        <!-- Incite -->
+        <div class="panel-card" data-brand="others">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Incite Fire</span>
+          </div>
+          <h4 class="panel-models">Taktis</h4>
+          <ul class="panel-features-list">
+            <li>Addressable network and panel viewing</li>
+            <li>Zone grouping & device text search</li>
+            <li>Filtered export for commissioning sign-off</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Technical Specifications & Architecture
+       ======================================================================== -->
+  <section class="specs-section" id="specs">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Specifications & System Requirements</h2>
+        <p class="section-desc">
+          High-performance native utility. Zero bloat, instant startup, lightweight memory footprint across all supported platforms.
+        </p>
+      </div>
+
+      <div class="specs-grid">
+        <div class="specs-card">
+          <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">System Requirements</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Designed to run smoothly on site tablets, Toughbooks, phones, and service laptops.
+          </p>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td>Supported Platforms</td>
+                <td>Windows 10/11, iOS, Android</td>
+              </tr>
+              <tr>
+                <td>Storage Required</td>
+                <td>~50 MB</td>
+              </tr>
+              <tr>
+                <td>Account Requirement</td>
+                <td>None (No cloud accounts or signups)</td>
+              </tr>
+              <tr>
+                <td>Permissions</td>
+                <td>Local storage only; optional notification on import</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="specs-card">
+          <h3 style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">Licensing & Distribution</h3>
+          <p style="font-size: 0.875rem; color: var(--text-secondary); margin-bottom: 1rem;">
+            Transparent pricing without enterprise subscription traps.
+          </p>
+          <table class="specs-table">
+            <tbody>
+              <tr>
+                <td>License Model</td>
+                <td>One-time purchase</td>
+              </tr>
+              <tr>
+                <td>Price</td>
+                <td>Personal: $9.95 AUD</td>
+              </tr>
+              <tr>
+                <td>Corporate Licensing</td>
+                <td>Available in packs of 10 Users</td>
+              </tr>
+              <tr>
+                <td>Distribution Channels</td>
+                <td>Microsoft Store, App Store, Google Play</td>
+              </tr>
+              <tr>
+                <td>Updates</td>
+                <td>Automatic background updates via App Stores</td>
+              </tr>
+              <tr>
+                <td>Developer</td>
+                <td>Laneyy</td>
+              </tr>
+              <tr>
+                <td>Contact & Support</td>
+                <td><a href="mailto:laneydevelops@gmail.com" style="color: var(--accent-orange);">laneydevelops@gmail.com</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Downloads Section
+       ======================================================================== -->
+  <section class="downloads-section" id="downloads">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Get FIP Config Viewer</h2>
+        <p class="section-desc">
+          Available on your preferred device. Shared configs work seamlessly across Windows, iOS, and Android.
+        </p>
+      </div>
+
+      <div class="downloads-grid">
+        <!-- Windows Card -->
+        <div class="download-card">
+          <div class="download-card-icon">
+            <svg viewBox="0 0 24 24" fill="#0078d4" width="36" height="36">
+              <path
+                d="M0 3.449L9.75 2.1v9.451H0V3.449zm0 8.899h9.75V21.9L0 20.551v-8.203zm10.749-10.42L24 0v11.55h-13.251V1.928zm0 10.42H24V24l-13.251-1.929V12.348z" />
+            </svg>
+          </div>
+          <h3 class="download-card-title">Windows</h3>
+          <p class="download-card-desc">For laptops, Surface Pro, and rugged field tablets running Windows 10 or 11.</p>
+          <a href="https://apps.microsoft.com/detail/9mz8tl0hw1b6?hl=en-GB&gl=AU" target="_blank"
+            rel="noopener noreferrer" class="btn btn-primary ms-store-link" style="width: 100%;">
+            Microsoft Store
+          </a>
+        </div>
+
+        <!-- iOS Card -->
+        <div class="download-card">
+          <div class="download-card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="36" height="36">
+              <path
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.15c.67-.83 1.13-1.98.99-3.15-1.01.05-2.22.68-2.92 1.5-.62.72-1.16 1.89-1.01 3.02 1.13.09 2.28-.56 2.94-1.37z" />
+            </svg>
+          </div>
+          <h3 class="download-card-title">iOS & iPadOS</h3>
+          <p class="download-card-desc">For iPhone and iPad. Quick site lookups and test verification in your pocket.</p>
+          <a href="https://apps.apple.com/app/fip-config-viewer/id6784992438" target="_blank"
+            rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+            Apple App Store
+          </a>
+        </div>
+
+        <!-- Android Card -->
+        <div class="download-card">
+          <div class="download-card-icon">
+            <svg viewBox="0 0 24 24" fill="#3ddc84" width="36" height="36">
+              <path
+                d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-1.0001s.4482-1.0001.9993-1.0001c.5516 0 .9997.4486.9997 1.0001s-.4481 1.0001-.9997 1.0001m-11.046 0c-.5511 0-.9993-.4486-.9993-1.0001s.4482-1.0001.9993-1.0001c.5516 0 .9997.4486.9997 1.0001s-.4481 1.0001-.9997 1.0001m11.4045-6.02l1.996-3.456a.416.416 0 0 0-.1521-.5676.416.416 0 0 0-.5676.1521l-2.0223 3.503C15.5902 8.4111 13.8533 8.0805 12 8.0805c-1.8533 0-3.5902.3306-5.1355.8724L4.8422 5.4499a.416.416 0 0 0-.5676-.1521.416.416 0 0 0-.1521.5676l1.996 3.456C2.6889 11.1867.3432 14.6589 0 18.7402h24c-.3432-4.0813-2.6889-7.5535-6.1185-9.4188" />
+            </svg>
+          </div>
+          <h3 class="download-card-title">Android</h3>
+          <p class="download-card-desc">For Android phones and tablets. Carry all panel configs wherever you test.</p>
+          <a href="https://play.google.com/store/apps/details?id=com.fipviewer" target="_blank"
+            rel="noopener noreferrer" class="btn btn-secondary" style="width: 100%;">
+            Google Play Store
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Footer
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand">
+            <img src="assets/icon.png" alt="FIP Config Viewer" class="brand-icon">
+            <span class="brand-title">FIP Config Viewer</span>
+          </div>
+          <p>
+            Fire panel configs, anywhere. Built by Laneyy for technicians, commissioning engineers, and testing crews.
+          </p>
+          <p style="margin-top: 10px;">
+            <a href="mailto:laneydevelops@gmail.com" style="color: var(--text-secondary); display: inline-flex; align-items: center; gap: 6px;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              laneydevelops@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Supported Panels</h4>
+            <ul>
+              <li><a href="#matrix">Ampac FireFinder</a></li>
+              <li><a href="#matrix">Vigilant MX1 & MX4428</a></li>
+              <li><a href="#matrix">Simplex 4100ES</a></li>
+              <li><a href="#matrix">Notifier 3030</a></li>
+              <li><a href="#matrix">Pertronic F220</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Downloads</h4>
+            <ul>
+              <li><a href="https://apps.microsoft.com/detail/9mz8tl0hw1b6?hl=en-GB&gl=AU" target="_blank"
+                  rel="noopener noreferrer">Windows (Microsoft Store)</a></li>
+              <li><a href="https://apps.apple.com/app/fip-config-viewer/id6784992438" target="_blank"
+                  rel="noopener noreferrer">iOS (App Store)</a></li>
+              <li><a href="https://play.google.com/store/apps/details?id=com.fipviewer" target="_blank"
+                  rel="noopener noreferrer">Android (Google Play)</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="#showcase">App Screenshots</a></li>
+              <li><a href="#specs">Specifications</a></li>
+              <li><a href="#specs">Corporate Licensing (10-Packs)</a></li>
+              <li><a href="mailto:laneydevelops@gmail.com">Contact Developer</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 FIP Config Viewer. Developed by Laneyy. Hosted on <a href="https://fipconfigviewer.com"
+            style="color: var(--accent-orange);">fipconfigviewer.com</a>.
+        </div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+          No Cloud • No Accounts • Air-Gapped Safe
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Full Screenshot Zoom -->
+  <div class="lightbox-modal" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close zoom">&times;</button>
+      <img id="lightboxImg" src="" alt="Enlarged screenshot">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
