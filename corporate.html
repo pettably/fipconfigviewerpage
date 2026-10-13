@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corporate Licensing — FIP Config Viewer 10-User Pack</title>
+  <meta name="description"
+    content="Purchase a FIP Config Viewer corporate licence pack for your fire alarm service team. One-time payment, 10 users, no subscription.">
+  <link rel="canonical" href="https://fipconfigviewer.com/corporate.html">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="corporate.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">
+        <img src="assets/icon.png" alt="FIP Config Viewer Icon" class="brand-icon">
+        <div class="brand-text">
+          <span class="brand-title">FIP Config Viewer</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="index.html" class="btn btn-secondary">&larr; Back to site</a>
+        <a href="mailto:laneydevelops@gmail.com" class="btn btn-primary">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="corp-main">
+    <div class="container">
+      <div class="corp-head">
+        <span class="corp-eyebrow">Corporate Licensing</span>
+        <h1 class="corp-title">Equip your whole <span class="text-fire">service team</span>.</h1>
+        <p class="corp-subtitle">
+          One Windows licence pack covers 10 users. One-time payment, no subscription,
+          no dongles, no cloud accounts.
+        </p>
+      </div>
+
+      <div class="corp-grid">
+        <section class="corp-info" aria-label="What's included">
+          <h2 class="corp-info-title">What's included</h2>
+          <ul class="corp-list">
+            <li><span class="corp-tick">✓</span> 10 user licences per pack</li>
+            <li><span class="corp-tick">✓</span> Windows (Windows 10 &amp; 11)</li>
+            <li><span class="corp-tick">✓</span> Ampac, Vigilant, Simplex, Notifier &amp; Pertronic panels</li>
+            <li><span class="corp-tick">✓</span> One-time purchase, no recurring fees</li>
+                        <li><span class="corp-tick">✓</span> Receipt / tax invoice emailed instantly</li>
+          </ul>
+
+          <div class="corp-note">
+            <h3>Need more than 10 users, or a purchase order?</h3>
+            <p>
+              Buy multiple packs at checkout, or
+              <a href="mailto:laneydevelops@gmail.com?subject=FIP%20Config%20Viewer%20Corporate%20Licensing">email
+                me</a> and I'll sort out an invoice.
+            </p>
+          </div>
+        </section>
+
+        <section class="corp-checkout" aria-label="Secure checkout">
+          <div class="corp-checkout-bar">
+            <span>Secure checkout</span>
+            <span class="corp-checkout-by">Payments by Lemon Squeezy</span>
+          </div>
+
+          <div id="checkoutLoading" class="corp-loading">Loading checkout…</div>
+
+          <iframe id="checkoutFrame" class="corp-frame" title="FIP Config Viewer corporate checkout" hidden
+            allow="payment" loading="lazy"></iframe>
+
+          <div id="checkoutFallback" class="corp-fallback" hidden>
+            <p>Checkout couldn't be loaded here.</p>
+            <a id="checkoutDirect" href="mailto:laneydevelops@gmail.com" class="btn btn-primary">Open checkout</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 FIP Config Viewer. Developed by Laneyy.</div>
+        <div style="font-family: var(--font-mono); font-size: 0.75rem;">
+          <a href="index.html">Home</a> • <a href="mailto:laneydevelops@gmail.com">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://assets.lemonsqueezy.com/lemon.js" defer></script>
+  <script src="corporate.js"></script>
+</body>
+
+</html>
