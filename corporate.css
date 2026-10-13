@@ -90,17 +90,17 @@
 }
 
 .corp-plan-featured {
-  border-color: var(--accent-orange);
+  border-color: #0078d4;
 }
 
 .corp-plan-badge {
   position: absolute;
   top: -10px;
   left: 1.5rem;
-  background: var(--accent-orange);
+  background: #0078d4;
   color: #fff;
   font-size: 0.7rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   padding: 2px 8px;

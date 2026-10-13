@@ -24,15 +24,15 @@
 
   --accent-red: #ef4444;
   --accent-red-glow: rgba(239, 68, 68, 0.18);
-  --accent-orange: #f97316;
+  --accent-orange: #4a95d6; /* legacy name: now the single link/accent blue */
   --accent-amber: #f59e0b;
   --accent-blue: #0078d4;
   --accent-cyan: #06b6d4;
   --accent-emerald: #10b981;
   --accent-emerald-glow: rgba(16, 185, 129, 0.2);
 
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: Consolas, 'SF Mono', Menlo, 'Liberation Mono', monospace;
 
   --radius-sm: 3px;
   --radius-md: 4px;
@@ -260,7 +260,7 @@ img {
 }
 
 .hero-title .text-fire {
-  color: #f0613d;
+  color: var(--text-white);
 }
 
 .hero-subtitle {
@@ -432,7 +432,7 @@ img {
 .showcase-tab.active {
   color: var(--text-white);
   background-color: var(--bg-card);
-  border-color: var(--accent-orange);
+  border-color: var(--accent-blue);
 }
 
 .showcase-viewport {
@@ -598,7 +598,7 @@ img {
 
 .matrix-brand-btn.active {
   background-color: var(--bg-elevated);
-  border-color: var(--accent-orange);
+  border-color: var(--accent-blue);
   color: var(--text-white);
 }
 
