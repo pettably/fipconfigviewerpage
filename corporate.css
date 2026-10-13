@@ -14,14 +14,10 @@
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-orange);
-  border: 1px solid var(--border-muted);
-  background: var(--bg-card);
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 1.25rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
 }
 
 .corp-title {
@@ -68,16 +64,10 @@
 }
 
 .corp-tick {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 22px;
-  height: 22px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background: var(--accent-emerald-glow);
-  color: var(--accent-emerald);
-  font-size: 0.8rem;
+  margin-right: 4px;
+  color: var(--text-secondary);
   font-weight: 700;
 }
 
@@ -97,31 +87,24 @@
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-lg);
-  transition: border-color var(--transition-fast), transform var(--transition-fast);
-}
-
-.corp-plan:hover {
-  border-color: var(--border-active);
-  transform: translateY(-2px);
 }
 
 .corp-plan-featured {
   border-color: var(--accent-orange);
-  background: linear-gradient(180deg, rgba(249, 115, 22, 0.08), var(--bg-card) 60%);
 }
 
 .corp-plan-badge {
   position: absolute;
-  top: -11px;
+  top: -10px;
   left: 1.5rem;
   background: var(--accent-orange);
   color: #fff;
   font-size: 0.7rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
+  padding: 2px 8px;
+  border-radius: 2px;
 }
 
 .corp-plan-name {
