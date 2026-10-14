@@ -7,9 +7,9 @@
   <title>FIP Config Viewer — Fire Panel Configs Anywhere | Windows, iOS, Android</title>
 
   <meta name="description"
-    content="View, search, audit loops, and create test reports for Ampac, Vigilant, Simplex, Notifier, and Pertronic fire panels on Windows, iOS, and Android. No vendor license or dongle required.">
+    content="View, search, audit loops, and create test reports for Ampac, Vigilant, Simplex, Notifier, Pertronic, and VESDA fire panels on Windows, iOS, and Android. No vendor license or dongle required.">
   <meta name="keywords"
-    content="fire indicator panel, FIP config viewer, fire panel viewer, Ampac FireFinder Plus, Vigilant MX1, Simplex 4100ES, Notifier 3030, Pertronic F220, fire alarm technician, test sheet export">
+    content="fire indicator panel, FIP config viewer, fire panel viewer, Ampac FireFinder Plus, Vigilant MX1, Simplex 4100ES, Notifier 3030, Pertronic F220, VESDA Aspire, fire alarm technician, test sheet export">
   <meta name="author" content="Laneyy">
   <meta name="robots" content="index, follow">
 
@@ -20,7 +20,7 @@
   <meta property="og:url" content="https://fipconfigviewer.com/">
   <meta property="og:title" content="FIP Config Viewer — Fire Panel Configs Anywhere">
   <meta property="og:description"
-    content="Open and search Ampac, Vigilant, Simplex, Notifier, and Pertronic fire panel backups on Windows, iOS, and Android. No vendor dongle or license required.">
+    content="Open and search Ampac, Vigilant, Simplex, Notifier, Pertronic, and VESDA fire panel backups on Windows, iOS, and Android. No vendor dongle or license required.">
   <meta property="og:image" content="https://fipconfigviewer.com/assets/screenshot2.png">
 
   <!-- Twitter Card -->
@@ -77,6 +77,7 @@
         <ul class="nav-links" id="navLinks">
           <li><a href="#showcase" class="nav-link">Screenshots</a></li>
           <li><a href="#matrix" class="nav-link">Supported Panels</a></li>
+          <li><a href="#tools" class="nav-link">Field Tools</a></li>
           <li><a href="#specs" class="nav-link">Specifications</a></li>
           <li><a href="#downloads" class="nav-link">Downloads</a></li>
         </ul>
@@ -108,7 +109,8 @@
       </h1>
 
       <p class="hero-subtitle">
-        Open, search, and verify Ampac, Vigilant, Simplex, Pertronic, and Notifier configurations on your tablet, phone,
+        Open, search, and verify Ampac, Vigilant, Simplex, Pertronic, VESDA, and Notifier configurations on your tablet,
+        phone,
         or PC.
       </p>
 
@@ -161,8 +163,8 @@
       <!-- Quick Proof / Stats Bar -->
       <div class="hero-stats-row">
         <div class="hero-stat">
-          <span class="stat-value">9+ Brands</span>
-          <span class="stat-label">Ampac, Simplex, Vigilant & more</span>
+          <span class="stat-value">10+ Brands</span>
+          <span class="stat-label">Ampac, Simplex, VESDA & more</span>
         </div>
         <div class="hero-stat">
           <span class="stat-value">8.6 GB → 2.5 MB</span>
@@ -175,6 +177,27 @@
         <div class="hero-stat">
           <span class="stat-value">100% Offline</span>
           <span class="stat-label">No Cloud, No Accounts</span>
+        </div>
+      </div>
+
+      <!-- Air-Gapped Trust Banner -->
+      <div class="trust-banner">
+        <div class="trust-icon-box">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <div class="trust-body">
+          <div class="trust-header-line">
+            <span class="trust-title">100% Air-Gapped &amp; Client Confidential</span>
+            <span class="trust-pill">On-Device Parsing</span>
+          </div>
+          <p class="trust-desc">
+            Client building configurations, fire loop maps, and security zone text are parsed 100% locally in device
+            memory. Zero cloud uploads, zero telemetry of customer configs, and zero third-party tracking.
+          </p>
         </div>
       </div>
     </div>
@@ -308,6 +331,7 @@
           <button class="matrix-brand-btn" data-filter="notifier">Notifier</button>
           <button class="matrix-brand-btn" data-filter="pertronic">Pertronic</button>
           <button class="matrix-brand-btn" data-filter="siemens">Siemens</button>
+          <button class="matrix-brand-btn" data-filter="vesda">VESDA</button>
           <button class="matrix-brand-btn" data-filter="others">Others</button>
         </div>
       </div>
@@ -400,6 +424,21 @@
           </ul>
         </div>
 
+        <!-- VESDA -->
+        <div class="panel-card" data-brand="vesda">
+          <div class="panel-card-header">
+            <span class="panel-brand-name">Xtralis / VESDA</span>
+            <span class="panel-status-pill">No License Required</span>
+          </div>
+          <h4 class="panel-models">VESDA Aspire</h4>
+          <ul class="panel-features-list">
+            <li>Instant Aspire pipe layout &amp; sampling hole table viewer</li>
+            <li>Built-in testing stopwatch for measuring pipe transit times</li>
+            <li>Hole sensitivity, balance %, and pressure inspection</li>
+            <li>One-tap export to AS 1851 commissioning test sheets</li>
+          </ul>
+        </div>
+
         <!-- Fusion -->
         <div class="panel-card" data-brand="others">
           <div class="panel-card-header">
@@ -437,6 +476,176 @@
             <li>Addressable network and panel viewing</li>
             <li>Zone grouping & device text search</li>
             <li>Filtered export for commissioning sign-off</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Technician Field Tools
+       ======================================================================== -->
+  <section class="tools-section" id="tools">
+    <div class="container">
+      <div class="section-head">
+        <h2 class="section-title">Built-In Field Engineering Tools</h2>
+        <p class="section-desc">
+          More than just a viewer. Essential diagnostic, compliance, and calculation utilities designed specifically for
+          fire alarm technicians on site.
+        </p>
+      </div>
+
+      <div class="tools-grid">
+        <!-- Tool 1: AS 1851 Test Sheets -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+            <span class="tool-tag">AS 1851 Compliance</span>
+          </div>
+          <h3 class="tool-card-title">Test Sheet Exporter</h3>
+          <p class="tool-card-desc">
+            Instantly export clean, structured testing spreadsheets and PDF checklists populated with live device
+            addresses, loop numbers, and zone descriptions.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Pass / Fail / Defect sign-off columns</li>
+            <li><span>✓</span> Filter by loop, node, or detector type</li>
+            <li><span>✓</span> Ready for routine service audits</li>
+          </ul>
+        </div>
+
+        <!-- Tool 2: VESDA Testing Stopwatch -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="14" r="8"></circle>
+                <line x1="12" y1="2" x2="12" y2="6"></line>
+                <line x1="12" y1="14" x2="15" y2="11"></line>
+              </svg>
+            </div>
+            <span class="tool-tag">Smoke Sampling</span>
+          </div>
+          <h3 class="tool-card-title">Pipe Transit Stopwatch</h3>
+          <p class="tool-card-desc">
+            Dedicated field stopwatch calibrated for measuring smoke transit times at the most remote sampling hole on
+            VESDA Aspirating Smoke Detectors.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Real-time millisecond timing</li>
+            <li><span>✓</span> Compare against Aspire design limit</li>
+            <li><span>✓</span> One-tap recording into the test report</li>
+          </ul>
+        </div>
+
+        <!-- Tool 3: Battery Sizing Calculator -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="16" height="12" rx="2"></rect>
+                <line x1="6" y1="11" x2="6" y2="15"></line>
+                <line x1="10" y1="11" x2="10" y2="15"></line>
+                <line x1="20" y1="11" x2="20" y2="15"></line>
+              </svg>
+            </div>
+            <span class="tool-tag">AS 1670.1 &amp; 4428</span>
+          </div>
+          <h3 class="tool-card-title">Standby Battery Calculator</h3>
+          <p class="tool-card-desc">
+            Calculate required power supply and Ampere-hour (Ah) battery capacity for 24-hour or 72-hour quiescent
+            standby plus 30-minute full evacuation alarm.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Standard temperature de-rating factor</li>
+            <li><span>✓</span> Aging safety margin calculation</li>
+            <li><span>✓</span> Standalone VESDA &amp; FIP battery calculations</li>
+          </ul>
+        </div>
+
+        <!-- Tool 4: Resistor Decoder -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M8 12h8"></path>
+                <path d="M12 8v8"></path>
+              </svg>
+            </div>
+            <span class="tool-tag">Calculators</span>
+          </div>
+          <h3 class="tool-card-title">EOL Resistor Decoder</h3>
+          <p class="tool-card-desc">
+            Interactive 4-band, 5-band, and 6-band color code decoder plus manufacturer reference tables for
+            conventional zones, relays, and monitored lines.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Color band selector with instant Ohms value</li>
+            <li><span>✓</span> Tolerance &amp; temperature coefficient calculation</li>
+            <li><span>✓</span> Reference values for Ampac, Vigilant, Simplex &amp; Pertronic</li>
+          </ul>
+        </div>
+
+        <!-- Tool 5: Config Diff & Audit -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="18" cy="18" r="3"></circle>
+                <circle cx="6" cy="6" r="3"></circle>
+                <path d="M13 6h3a2 2 0 0 1 2 2v7"></path>
+                <line x1="6" y1="9" x2="6" y2="21"></line>
+              </svg>
+            </div>
+            <span class="tool-tag">Quality Assurance</span>
+          </div>
+          <h3 class="tool-card-title">Config Diff &amp; Loop Audit</h3>
+          <p class="tool-card-desc">
+            Compare two panel revisions side-by-side to highlight added devices, modified point descriptions, and
+            altered logic equations before and after service.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Side-by-side point and equation diffing</li>
+            <li><span>✓</span> Loop address limit &amp; spare address audit</li>
+            <li><span>✓</span> Unassigned zone text &amp; duplicate detection</li>
+          </ul>
+        </div>
+
+        <!-- Tool 6: Live Serial Terminal -->
+        <div class="tool-card">
+          <div class="tool-card-head">
+            <div class="tool-icon-wrap">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="4 17 10 11 4 5"></polyline>
+                <line x1="12" y1="19" x2="20" y2="19"></line>
+              </svg>
+            </div>
+            <span class="tool-tag">Diagnostic Port</span>
+          </div>
+          <h3 class="tool-card-title">Live Serial Terminal</h3>
+          <p class="tool-card-desc">
+            Directly connect your laptop or Android field device to panel diagnostic and printer ports via USB-to-Serial
+            converter for live event stream logging.
+          </p>
+          <ul class="tool-card-bullets">
+            <li><span>✓</span> Windows &amp; Android USB-serial support</li>
+            <li><span>✓</span> Real-time event logging &amp; text capture</li>
+            <li><span>✓</span> Troubleshoot intermittent faults on site</li>
           </ul>
         </div>
       </div>
@@ -501,7 +710,7 @@
               </tr>
               <tr>
                 <td>Corporate Licensing</td>
-                <td>Available in packs of 10 or 20 Users — <a href="corporate.html"
+                <td>Multi-user licence packs available — <a href="corporate.html"
                     style="color: var(--accent-orange);">buy a corporate licence</a></td>
               </tr>
               <tr>
@@ -652,6 +861,7 @@
               <li><a href="#matrix">Simplex 4100ES</a></li>
               <li><a href="#matrix">Notifier 3030</a></li>
               <li><a href="#matrix">Pertronic F220</a></li>
+              <li><a href="#matrix">VESDA Aspire</a></li>
             </ul>
           </div>
 
@@ -671,6 +881,8 @@
             <h4>Information</h4>
             <ul>
               <li><a href="#showcase">App Screenshots</a></li>
+              <li><a href="#matrix">Supported Panels</a></li>
+              <li><a href="#tools">Field Tools</a></li>
               <li><a href="#specs">Specifications</a></li>
               <li><a href="corporate.html">Corporate Licensing</a></li>
               <li><a href="mailto:laneydevelops@gmail.com">Contact Developer</a></li>

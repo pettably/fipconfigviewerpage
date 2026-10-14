@@ -101,8 +101,9 @@ function initStoreLinks() {
   const isWindows = navigator.userAgent.indexOf('Windows') !== -1;
 
   storeBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
+    btn.addEventListener('click', (e) => {
       if (isWindows) {
+        e.preventDefault();
         const storeProtocolUrl = 'ms-windows-store://pdp/?productid=9mz8tl0hw1b6';
         window.location.href = storeProtocolUrl;
       }

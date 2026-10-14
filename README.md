@@ -49,6 +49,6 @@ To connect `fipconfigviewer.com` from Porkbun to this GitHub repository:
 
 ## ✉️ Contact & Inquiries
 
-For support, feedback, or corporate licensing (10-user packs):
+For support, feedback, or corporate licensing:
 - Email: [laneydevelops@gmail.com](mailto:laneydevelops@gmail.com)
 
