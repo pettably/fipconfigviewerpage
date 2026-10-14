@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /corporate.html
+
+Sitemap: https://fipconfigviewer.com/sitemap.xml
